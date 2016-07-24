@@ -1,14 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/content"
-        android:textSize="42sp"
-        android:gravity="center"
-        />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eee">
 
-</FrameLayout>
+        <ru.yandex.yamblz.ui.views.LightweightHorizontalLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#f97"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f00"
+                android:padding="10dp"
+                android:text="@string/content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff0"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textSize="32sp"/>
+
+        </ru.yandex.yamblz.ui.views.LightweightHorizontalLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#19f">
+
+        <ru.yandex.yamblz.ui.views.LightweightHorizontalLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#d7f">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="#f00"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textSize="32sp"/>
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:background="#0f0"
+                android:paddingTop="10dp"
+                android:text="@string/content"
+                android:textSize="32sp"/>
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="100dp"
+                android:background="#f00"/>
+
+        </ru.yandex.yamblz.ui.views.LightweightHorizontalLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eee">
+
+        <ru.yandex.yamblz.ui.views.LightweightHorizontalLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff0"
+                android:padding="10dp"
+                android:text="@string/content"
+                android:textSize="32sp"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="100dp"
+                android:background="#0f0"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+        </ru.yandex.yamblz.ui.views.LightweightHorizontalLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
