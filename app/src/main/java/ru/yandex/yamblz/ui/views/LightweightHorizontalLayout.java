@@ -56,11 +56,7 @@ public class LightweightHorizontalLayout extends ViewGroup {
         int horizontalPadding = getPaddingLeft() + getPaddingRight();
         int contentMaxWidth = MeasureSpec.getSize(widthMeasureSpec) - horizontalPadding;
 
-        if (MeasureSpec.getMode(widthMeasureSpec) == EXACTLY) {
-            widthMeasured = contentMaxWidth;
-        } else {
-            widthMeasured = Math.min(widthMeasured, contentMaxWidth);
-        }
+        widthMeasured = Math.min(widthMeasured, contentMaxWidth);
 
         if (specialChildIndex != NONE) {
             childrenWidth[specialChildIndex] = contentMaxWidth - widthMeasured;
